@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Andy Automobile</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="customcss/style.css">
+        <style> 
+          body {
+              padding-top: 60px;
+          }
+      </style>
+  </head>
+  <body>
+<!--Starting navigation bar-->  
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="login.html">Andy Auto</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="displayusers.php">View Customers <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <!--Pull right navigation items-->
+    <ul class="nav navbar-nav navbar-right">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="images/avatar.png" width="40" height="40" alt="avatar" />
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Profile</a>
+          <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!--End right navigation items-->
+  </div>
+</nav>
+<!--End navigation bar-->
+<!--form body-->
+<div class="container h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-10 col-md-8 col-lg-6">
+          <!-- Form -->
+          <form class="form-example" action="registration.php" method="post">
+              <h1>Andy Automobile</h1>
+              <p class="description">Register user</p>
+              <!-- Input fields -->  
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" name="firstname" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Last Name</label>
+                  <input type="text" name="lastname" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="text" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>Address</label>
+                  <input type="text" name="txtMsg" class="form-control" required>
+            </div>
+                <div class="form-group">
+                      <label>Town</label>
+                      <input type="text" name="town" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label>County</label>
+                  <input type="text" name="county" class="form-control" required>
+              </div>    
+              <div class="form-group">
+                  <label>Post Code</label>
+                  <input type="text" name="postcode" class="form-control" required>
+              </div>
+              <div class="form-group">
+                  <label>Telephone Number</label>
+                  <input type="number" name="telephone_number" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="number" name="mobile_number" class="form-control" required>
+            </div>              <br />
+            <div class="form-group">
+              <input type="submit" name="submit" class="btnContact" value="Register" />
+          </div>
+  </div>	     
+
+              <!-- End input fields -->
+    <!-- Submit button -->
+        
+          </form>
+          <!-- Form end -->
+      </div>
+  </div>
+
+<!--Footer start-->
+<footer class="bg-white">
+  <div class="container py-5">
+    <hr />
+      <div class="row py-3">
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold text-left mb-4">About</h6>
+              <ul class="list-unstyled text-left mb-0">
+                  <li class="mb-2"><a href="contactus.html">Contact Us</a></li>
+                  <li class="mb-2"><a href="#">About Us</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold text-left mb-4">Help</h6>
+              <ul class="list-unstyled text-left mb-0">
+                  <li class="mb-2"><a href="faq.html">FAQs</a></li>
+                  <li class="mb-2"><a href="#">Payments</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold text-left mb-4">Policy</h6>
+              <ul class="list-unstyled text-left mb-0">
+                  <li class="mb-2"><a href="#">Return Policy</a></li>
+                  <li class="mb-2"><a href="#">Terms Of Use</a></li>
+                  <li class="mb-2"><a href="#">Security</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold text-left mb-4">Company</h6>
+              <ul class="list-unstyled text-left mb-0">
+                  <li class="mb-2"><a href="login.html">Login</a></li>
+                  <li class="mb-2"><a href="register.html">Register</a></li>
+                  <li class="mb-2"><a href="#">Sitemap</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold text-left mb-4">Registered Office Address</h6>
+              <p class="text-muted text-left mb-4">Andyauto , along Namiwawa road, Opposite Southern Region Water Board Head office, Zomba</p>
+              <p><a href="https://web.facebook.com/"><img src="images/icons8-facebook-48.png" alt="facebookicon" /></a>
+                &nbsp <a href="https://web.whatsapp.com/"><img src="images/icons8-whatsapp-48.png" alt="whatsapp"> </a>&nbsp 
+                <a href="https://twitter.com/"><img src="images/icons8-twitter-48.png" alt="twitter" /></a>
+                &nbsp <a href="https://desktop.telegram.org/"><img src="images/icons8-telegram-app-48.png" alt="telegram"></a> &nbsp
+                <a href="https://www.linkedin.com/"><img src="images/icons8-linkedin-48.png" alt="facebookicon" /></a>
+                </p>
+            </div>
+      </div>
+  </div>
+  <hr class="p-0 m-0 b-0">
+  <div class="bg-light py-2">
+      <div class="container text-center">
+          <p class="text-primary mb-0 py-2">© 2022 Andyauto All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+<!--End footer-->
+  <script src="js/Jquery.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.bundle.js.map"></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.js.map"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js.map"></script>
+</body>
+</html>
